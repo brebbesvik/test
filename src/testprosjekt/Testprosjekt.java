@@ -5,6 +5,7 @@
  */
 package testprosjekt;
 
+import java.util.ArrayList;
 /**
  *
  * @author Ben
@@ -15,7 +16,14 @@ public class Testprosjekt {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Greetings from Kronstad");
+        ArrayList<String> locations = new ArrayList<String>();
+        locations.add("Kristiansand");
+        locations.add("Bergen");
+        locations.add("Trondheim");
+        locations.add("Lakselv");
+        for (String location : locations) {
+            System.out.println("Greetings from " + location);
+        }
     }
     
 }
